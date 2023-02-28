@@ -6,7 +6,7 @@ const app: FastifyInstance = Fastify({ logger: true });
 
 app.register(mercurius, { schema, graphiql: true, });
 
-app.get("/", async (request, reply) => {
+app.get("/", async (_request, reply) => {
   const query = `
     query MyQuery {
       hello
