@@ -35,16 +35,23 @@ jobs:
           version: 7.28.0
           run_install: false 
 
-      - name: pnpm install, build, and test
-        run: |
-          pnpm install
-          pnpm build 
-          pnpm run test
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Clean
+        run: pnpm clean 
+
+      - name: Test
+        run: pnpm test
+
+      - name: Build
+        run: pnpm build
 
       - name: Upload artifact for deployment job
         uses: actions/download-artifact@v3
         with:
           name: node-app
+          path: .
 
   deploy:
     permissions:
