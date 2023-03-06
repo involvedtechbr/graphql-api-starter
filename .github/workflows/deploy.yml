@@ -65,4 +65,4 @@ jobs:
           app-name: 'graphql-api-starter'
           slot-name: ${{ env.NODE_ENV }}
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5EEEE8DA37DC4DD29A9D53AC912443BA }}
-          package: ${{ env. }}
+          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
