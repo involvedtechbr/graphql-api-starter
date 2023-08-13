@@ -3,10 +3,11 @@ import config from "./config";
 
 (async () => {
   const PORT = config.PORT as number;
+  const HOST = config.HOST;
   const server = app;
 
   try {
-    await server.listen({ port: PORT });
+    await server.listen({ host: HOST, port: PORT });
 
     const address = server.server.address();
     const port = typeof address === "string" ? address : address?.port;
