@@ -22,7 +22,8 @@
     "dotenv": "^16.0.3",
     "fastify": "^4.13.0",
     "graphql": "^16.6.0",
-    "mercurius": "^12.2.0"
+    "mercurius": "^12.2.0",
+    "pino": "^8.15.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.21.0",
@@ -38,6 +39,7 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
+    "pino-pretty": "^10.2.0",
     "prettier": "^2.8.4",
     "rimraf": "^4.1.2",
     "tsup": "^6.6.3",
