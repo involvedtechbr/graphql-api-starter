@@ -6,8 +6,11 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+    env_file:
+      - .env
     environment:
       - NODE_ENV=${NODE_ENV}
+      - HOST=${HOST}
       - APP_PORT=${PORT}
     ports:
-      - "4000:4000"
+      - "${PORT}:${PORT}"

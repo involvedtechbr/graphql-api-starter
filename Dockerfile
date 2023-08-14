@@ -37,6 +37,4 @@ RUN adduser --system --uid 1001 nodejs
 USER nodejs
 COPY --from=installer app/ .
 
-EXPOSE 4000
-
 CMD ["pnpm", "start"]
