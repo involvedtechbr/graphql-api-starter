@@ -38,8 +38,8 @@ devDependencies:
     specifier: ^7.21.0
     version: 7.21.0(@babel/core@7.21.0)
   '@fastify/cors':
-    specifier: ^8.2.0
-    version: 8.2.0
+    specifier: ^8.3.0
+    version: 8.3.0
   '@types/node':
     specifier: ^18.14.2
     version: 18.14.2
@@ -1779,8 +1779,8 @@ packages:
       fast-uri: 2.2.0
     dev: false
 
-  /@fastify/cors@8.2.0:
-    resolution: {integrity: sha512-qDgwpmg6C4D0D3nh8MTMuRXWyEwPnDZDBODaJv90FP2o9ukbahJByW4FtrM5Bpod5KbTf1oIExBmpItbUTQmHg==}
+  /@fastify/cors@8.3.0:
+    resolution: {integrity: sha512-oj9xkka2Tg0MrwuKhsSUumcAkfp2YCnKxmFEusi01pjk1YrdDsuSYTHXEelWNW+ilSy/ApZq0c2SvhKrLX0H1g==}
     dependencies:
       fastify-plugin: 4.5.0
       mnemonist: 0.39.5
