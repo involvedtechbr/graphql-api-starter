@@ -18,6 +18,12 @@ This is an example of how to list things you need to use the software and how to
   npm install pnpm -g
   ```
 
+- MongoDB
+
+  ```sh
+  https://www.mongodb.com/docs/manual/installation/
+  ```
+
 ## Installation
 
 Clone the repo

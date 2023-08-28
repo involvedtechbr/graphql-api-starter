@@ -1,6 +1,16 @@
 version: "3.8"
 
 services:
+  mongo:
+    container_name: mongodb
+    image: mongo:latest
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data:/data/db
+    networks:
+      - app_network
   api:
     container_name: server
     build:
@@ -12,5 +22,13 @@ services:
       - NODE_ENV=${NODE_ENV}
       - HOST=${HOST}
       - APP_PORT=${PORT}
+      - MONGO_URI=${MONGO_URI}
     ports:
       - "${PORT}:${PORT}"
+    networks:
+      - app_network
+
+# with each other, by using their container name as a hostname
+networks:
+  app_network:
+    external: true

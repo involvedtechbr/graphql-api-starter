@@ -12,8 +12,8 @@
     "test": "vitest",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
-    "prettier:check": "prettier --check .",
-    "prettier:format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prettier:check": "prettier --check \"**/*.{ts,tsx,md}\" '!./data'",
+    "prettier:format": "prettier --write \"**/*.{ts,tsx,md}\" '!./data'",
     "prepare": "husky install",
     "compose": "docker-compose --env-file ./.env up -d"
   },
@@ -25,6 +25,7 @@
     "fastify": "^4.13.0",
     "graphql": "^16.8.0",
     "mercurius": "^12.2.0",
+    "mongoose": "^7.4.5",
     "pino": "^8.15.0"
   },
   "devDependencies": {
