@@ -8,6 +8,7 @@
     "build": "tsup src/server.ts",
     "start": "node dist/server.js",
     "dev": "tsx watch src/server.ts",
+    "config:env": "cp .env.example .env",
     "test": "vitest",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
