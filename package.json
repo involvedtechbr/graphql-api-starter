@@ -10,6 +10,7 @@
     "dev": "tsx watch src/server.ts",
     "config:env": "cp .env.example .env",
     "test": "jest",
+    "schema": "tsx scripts/updateSchema.ts",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "prettier:check": "prettier --check \"**/*.{ts,tsx,md}\" '!./data'",
