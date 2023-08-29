@@ -1,5 +1,5 @@
 import { GraphQLString, GraphQLNonNull } from "graphql";
-import { mutationWithClientMutationId, toGlobalId } from "graphql-relay";
+import { mutationWithClientMutationId } from "graphql-relay";
 import UserModel from "../UserModel";
 import encryptPassword from "../../../utils/encryptPassword";
 import { userField } from "../userFields";

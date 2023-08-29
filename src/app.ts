@@ -1,4 +1,4 @@
-import Fastify, { FastifyInstance } from "fastify";
+import Fastify from "fastify";
 import cors from "@fastify/cors";
 import mercurius from "mercurius";
 import schema from "./graphql/schema";
@@ -11,7 +11,7 @@ app.register(cors);
 app.register(mercurius, {
   schema,
   graphiql: true,
-  context: (_request, _reply) => getContext(),
+  context: () => getContext(),
 });
 
 app.get("/", async (_request, reply) => {
