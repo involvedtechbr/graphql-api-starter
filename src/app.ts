@@ -5,7 +5,7 @@ import schema from "./graphql/schema";
 import logger from "./logger";
 import { getContext } from "./getContext";
 
-const app: FastifyInstance = Fastify({ logger });
+const app = Fastify({ logger });
 
 app.register(cors);
 app.register(mercurius, {

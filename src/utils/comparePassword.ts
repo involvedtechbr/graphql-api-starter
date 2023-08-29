@@ -1,5 +1,5 @@
 import bcrypt from "bcrypt";
-import logger from "@/logger";
+import logger from "../logger";
 
 async function comparePassword(
   password: string,
