@@ -16,7 +16,7 @@ describe("Root router tests", () => {
   it("should return empty array", async () => {
     const query = `
       query AllUsers {
-        allUsers {
+        users {
           edges {
             node {
               id
@@ -33,6 +33,6 @@ describe("Root router tests", () => {
 
     const res = await graphql({ schema, source: query });
 
-    expect(res.data?.allUsers).toEqual({ edges: [] });
+    expect(res.data?.users).toEqual({ edges: [] });
   });
 });

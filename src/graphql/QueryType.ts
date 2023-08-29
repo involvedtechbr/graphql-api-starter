@@ -1,7 +1,5 @@
 import { GraphQLObjectType, GraphQLString } from "graphql";
-import { UserConnection } from "../modules/user/UserType";
-import { connectionArgs } from "graphql-relay";
-import { UserLoader } from "../modules/user/UserLoader";
+import { userConnectionField } from '../modules/user/userFields';
 
 const QueryType = new GraphQLObjectType({
   name: "Query",
@@ -11,15 +9,7 @@ const QueryType = new GraphQLObjectType({
       type: GraphQLString,
       resolve: () => "Hello from GraphQL API",
     },
-    allUsers: {
-      type: UserConnection.connectionType,
-      args: {
-        ...connectionArgs,
-      },
-      resolve: async (_, args, context) => {
-        return await UserLoader.loadAll(context, args);
-      },
-    },
+    ...userConnectionField('users'),
   }),
 });
 

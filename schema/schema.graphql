@@ -1,7 +1,7 @@
 """The root all queries"""
 type Query {
   hello: String
-  allUsers(
+  users(
     """Returns the items in the list that come after the specified cursor."""
     after: String
 
