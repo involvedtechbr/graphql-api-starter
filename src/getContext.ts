@@ -1,4 +1,4 @@
-import { getDataloaders } from "@/modules/loader/loaderRegister";
+import { getDataloaders } from "./modules/loader/loaderRegister";
 
 const getContext = () => {
   const dataloaders = getDataloaders();
