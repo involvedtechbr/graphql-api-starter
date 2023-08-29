@@ -1,7 +1,7 @@
-import { GraphQLObjectType, GraphQLString, GraphQLID } from "graphql";
-import { UserConnection } from "@/modules/user/UserType";
+import { GraphQLObjectType, GraphQLString } from "graphql";
+import { UserConnection } from "../modules/user/UserType";
 import { connectionArgs } from "graphql-relay";
-import { UserLoader } from "@/modules/user/UserLoader";
+import { UserLoader } from "../modules/user/UserLoader";
 
 const QueryType = new GraphQLObjectType({
   name: "Query",

@@ -1,4 +1,3 @@
-import { describe, it, expect } from "vitest";
 import { graphql } from "graphql";
 import schema from "../../src/graphql/schema";
 
