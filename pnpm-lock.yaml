@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@entria/graphql-mongo-helpers':
+    specifier: ^1.1.2
+    version: 1.1.2(dataloader@2.2.2)(graphql-relay@0.10.0)(graphql@16.8.0)(mongoose@7.4.5)
   bcrypt:
     specifier: ^5.1.1
     version: 5.1.1
@@ -17,6 +20,9 @@ dependencies:
   graphql:
     specifier: ^16.8.0
     version: 16.8.0
+  graphql-relay:
+    specifier: ^0.10.0
+    version: 0.10.0(graphql@16.8.0)
   mercurius:
     specifier: ^12.2.0
     version: 12.2.0(graphql@16.8.0)
@@ -1526,6 +1532,33 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
+  /@entria/graphql-mongo-helpers@1.1.2(dataloader@2.2.2)(graphql-relay@0.10.0)(graphql@16.8.0)(mongoose@7.4.5):
+    resolution: {integrity: sha512-MkQJdl4/FCAfRx0a5SmDuv+yT+ers9ZleIBYHswwVaCeTXbQQRJxLRQd13yawFfGS1XOZCEzvCsbjQididn/Gg==}
+    peerDependencies:
+      dataloader: '*'
+      graphql: '>=16.0.0'
+      graphql-relay: '*'
+      mongoose: '*'
+    dependencies:
+      '@entria/graphql-mongoose-loader': 4.4.0(graphql-relay@0.10.0)(graphql@16.8.0)(mongoose@7.4.5)
+      dataloader: 2.2.2
+      graphql: 16.8.0
+      graphql-relay: 0.10.0(graphql@16.8.0)
+      mongoose: 7.4.5
+    dev: false
+
+  /@entria/graphql-mongoose-loader@4.4.0(graphql-relay@0.10.0)(graphql@16.8.0)(mongoose@7.4.5):
+    resolution: {integrity: sha512-RcNdqPQf/GlnQch1IyUOTMTw13k+zE7zK9JeMd5cUGnShI/ih4k1JZEEtJDwyRwW1bOqAhlmP8dyY1CY8iPX8Q==}
+    peerDependencies:
+      graphql: '*'
+      graphql-relay: '*'
+      mongoose: '*'
+    dependencies:
+      graphql: 16.8.0
+      graphql-relay: 0.10.0(graphql@16.8.0)
+      mongoose: 7.4.5
+    dev: false
+
   /@esbuild-kit/cjs-loader@2.4.2:
     resolution: {integrity: sha512-BDXFbYOJzT/NBEtp71cvsrGPwGAMGRB/349rwKuoxNSiKjPraNNnlK6MIIabViCjqZugu6j+xeMDlEkWdHHJSg==}
     dependencies:
@@ -2877,6 +2910,10 @@ packages:
       which: 2.0.2
     dev: true
 
+  /dataloader@2.2.2:
+    resolution: {integrity: sha512-8YnDaaf7N3k/q5HnTJVuzSyLETjoZjVmHc4AeKAzOvKHEFQKcn64OKBfzHYtE9zGjctNM7V9I0MfnUVLpi7M5g==}
+    dev: false
+
   /dateformat@4.6.3:
     resolution: {integrity: sha512-2P0p0pFGzHS5EMnhdxQi7aJN+iMheud0UhG4dlE1DLAlvL8JHjJJTX/CSm4JXwV0Ka5nGk3zC5mcb5bUQUxxMA==}
     dev: true
@@ -3688,6 +3725,15 @@ packages:
       lodash.memoize: 4.1.2
       lodash.merge: 4.6.2
       lodash.mergewith: 4.6.2
+    dev: false
+
+  /graphql-relay@0.10.0(graphql@16.8.0):
+    resolution: {integrity: sha512-44yBuw2/DLNEiMypbNZBt1yMDbBmyVPVesPywnteGGALiBmdyy1JP8jSg8ClLePg8ZZxk0O4BLhd1a6U/1jDOQ==}
+    engines: {node: ^12.20.0 || ^14.15.0 || >= 15.9.0}
+    peerDependencies:
+      graphql: ^16.2.0
+    dependencies:
+      graphql: 16.8.0
     dev: false
 
   /graphql@16.8.0:
