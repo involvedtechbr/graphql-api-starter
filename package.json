@@ -3,6 +3,16 @@
   "version": "0.0.1",
   "description": "GraphQL API Starter",
   "main": "src/server.ts",
+  "keywords": ["nodejs", "graphql", "relay", "fastify", "typescript", "starter"],
+  "author": "Involved Tech <developers@involved.com.br>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/involvedtechbr/graphql-api-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/involvedtechbr/graphql-api-starter/issues"
+  },
+  "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsup src/server.ts",
@@ -19,9 +29,9 @@
     "prepare": "husky install",
     "compose": "docker-compose --env-file ./.env up -d"
   },
-  "keywords": [],
-  "author": "Involved Tech <developers@involved.com.br>",
-  "license": "MIT",
+  "peerDependencies": {
+    "graphql": "^16.0.0"
+  },
   "dependencies": {
     "@entria/graphql-mongo-helpers": "^1.1.2",
     "bcrypt": "^5.1.1",
