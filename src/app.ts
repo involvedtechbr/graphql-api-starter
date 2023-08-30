@@ -4,7 +4,7 @@ import mercurius from "mercurius";
 import schema from "./graphql/schema";
 import logger from "./logger";
 import { getContext } from "./getContext";
-import homeRoute from "./api/home";
+import { homeRoute, versionRoute } from "./api";
 
 const app = Fastify({ logger });
 
@@ -17,5 +17,6 @@ app.register(mercurius, {
 
 // routes
 app.register(homeRoute);
+app.register(versionRoute);
 
 export default app;
