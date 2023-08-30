@@ -11,8 +11,8 @@ concurrency:
   cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
 
 jobs:
-  build:
-    name: Build
+  test:
+    name: test
     timeout-minutes: 15
     runs-on: ubuntu-latest
 
