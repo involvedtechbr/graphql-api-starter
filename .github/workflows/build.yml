@@ -1,9 +1,5 @@
 name: Build
 
-env:
-  NODE_VERSION: 18.17.1
-  PNPM_VERSION: 8.7.0
-
 on:
   push:
     branches: ["main"]
@@ -28,6 +24,8 @@ jobs:
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
+        env:
+          NODE_VERSION: 18.17.1
         with:
           node-version: NODE_VERSION
 
@@ -35,7 +33,6 @@ jobs:
         name: Install pnpm
         id: pnpm-install
         with:
-          version: PNPM_VERSION
           run_install: true 
 
       - name: Install dependencies
