@@ -33,11 +33,8 @@ jobs:
           version: 8.7.0
           run_install: true
 
-      - name: Install
-        uses: ./tooling/github-actions/install
-
       - name: Run Prettier
-        run: prettier:check
+        run: pnpm prettier:check
   
   eslint:
     name: ESlint
@@ -62,4 +59,4 @@ jobs:
           run_install: true
       
       - name: Run ESlint
-        run: lint
+        run: pnpm lint
