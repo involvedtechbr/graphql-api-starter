@@ -15,6 +15,7 @@
     "lint:fix": "eslint . --ext .ts --fix",
     "prettier:check": "prettier --check \"**/*.{ts,tsx,md}\" '!./data'",
     "prettier:format": "prettier --write \"**/*.{ts,tsx,md}\" '!./data'",
+    "typecheck": "tsc --noEmit",
     "prepare": "husky install",
     "compose": "docker-compose --env-file ./.env up -d"
   },

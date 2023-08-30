@@ -60,3 +60,39 @@ jobs:
       
       - name: Run ESlint
         run: pnpm lint
+
+  typecheck:
+    name: TypeCheck
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.17.1
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        id: pnpm-install
+        with:
+          version: 8.7.0
+          run_install: true
+
+      - name: Cache TypeScript TSBuild Info Files
+        id: cache-typescript-tsbuildinfo
+        uses: actions/cache@v3
+        with:
+          path: node_modules/.cache/*-tsbuildinfo.json
+          # We use the commit hash as the key to always update the cache as a
+          # workaround to this issue:
+          # https://github.com/actions/cache/issues/106
+          key: ${{ runner.os }}-cache-typescript-tsbuildinfo-${{ github.sha }}
+          restore-keys: ${{ runner.os }}-cache-typescript-tsbuildinfo-
+
+      - name: Run TypeScript type check
+        run: pnpm typecheck
