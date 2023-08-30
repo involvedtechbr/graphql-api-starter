@@ -1,0 +1,40 @@
+name: Quality
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    types: [opened, synchronize]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
+
+jobs:
+  prettier:
+    name: Prettier
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Install
+        uses: ./tooling/github-actions/install
+
+      - name: Run Prettier
+        run: prettier:check
+  
+  eslint:
+    name: ESlint
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+      
+      - name: Setup and install
+        uses: ./tooling/github-actions/install
+      
+      - name: Run ESlint
+        run: lint
