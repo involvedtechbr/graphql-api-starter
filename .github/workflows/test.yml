@@ -1,4 +1,8 @@
-name: CI
+name: Test
+
+env:
+  NODE_VERSION: 18.17.1
+  PNPM_VERSION: 8.7.0
 
 on:
   push:
@@ -6,9 +10,13 @@ on:
   pull_request:
     types: [opened, synchronize]
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
+
 jobs:
   build:
-    name: Test and Build
+    name: Build
     timeout-minutes: 15
     runs-on: ubuntu-latest
 
@@ -21,23 +29,17 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
-          node-version: 18.14.0
+          node-version: NODE_VERSION
 
       - uses: pnpm/action-setup@v2
         name: Install pnpm
         id: pnpm-install
         with:
-          version: 7.28.0
-          run_install: false 
+          version: PNPM_VERSION
+          run_install: true 
 
       - name: Install dependencies
         run: pnpm install
-
-      - name: Clean
-        run: pnpm clean 
-
-      - name: Test
-        run: pnpm test
 
       - name: Build
         run: pnpm build
