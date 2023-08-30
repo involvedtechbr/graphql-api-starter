@@ -4,6 +4,7 @@ import mercurius from "mercurius";
 import schema from "./graphql/schema";
 import logger from "./logger";
 import { getContext } from "./getContext";
+import { homeRoute, versionRoute } from "./api";
 
 const app = Fastify({ logger });
 
@@ -14,14 +15,8 @@ app.register(mercurius, {
   context: () => getContext(),
 });
 
-app.get("/", async (_request, reply) => {
-  const query = `
-    query MyQuery {
-      hello
-    }
-  `;
-
-  return reply.graphql(query);
-});
+// routes
+app.register(homeRoute);
+app.register(versionRoute);
 
 export default app;
