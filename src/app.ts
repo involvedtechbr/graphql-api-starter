@@ -8,7 +8,7 @@ import { homeRoute, versionRoute } from "./api";
 
 const app = Fastify({ logger });
 
-app.register(cors);
+app.register(cors, { origin: "*" });
 app.register(mercurius, {
   schema,
   graphiql: true,
