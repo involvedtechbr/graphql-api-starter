@@ -16,7 +16,7 @@ app.register(mercurius, {
 });
 
 // routes
-app.register(homeRoute);
-app.register(versionRoute);
+app.register(homeRoute, { prefix: "/" });
+app.register(versionRoute, { prefix: "/version" });
 
 export default app;
