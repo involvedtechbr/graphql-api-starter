@@ -26,29 +26,13 @@ const opts: RouteShorthandOptions = {
  * Encapsulates the routes
  * @param {FastifyInstance} app Encapsulated Fastify Instance
  */
-async function versionRoute(app: FastifyInstance) {
-  app.get(
-    "/version",
-    opts,
-    async (
-      _request: FastifyRequest,
-      reply: FastifyReply,
-    ): Promise<{
-      success: boolean;
-      message: string;
-      version: string;
-      statusCode: number;
-    }> => {
-      reply.statusCode = 200;
-
-      return {
-        success: true,
-        statusCode: reply.statusCode,
-        message: "API Version",
-        version,
-      };
-    },
-  );
+export async function versionRoute(app: FastifyInstance) {
+  app.get("/", opts, async (_request: FastifyRequest, reply: FastifyReply) => {
+    reply.code(200).send({
+      success: true,
+      statusCode: reply.statusCode,
+      message: "API Version",
+      version,
+    });
+  });
 }
-
-export default versionRoute;

@@ -1,4 +1,2 @@
-import homeRoute from "./home";
-import versionRoute from "./version/versionRoute";
-
-export { homeRoute, versionRoute };
+export * from "./home/homeRoute";
+export * from "./version/versionRoute";
