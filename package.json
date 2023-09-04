@@ -47,7 +47,7 @@
     "fastify": "^4.22.0",
     "graphql": "^16.8.0",
     "graphql-relay": "^0.10.0",
-    "mercurius": "^12.2.0",
+    "mercurius": "^13.1.0",
     "mongoose": "^7.4.5",
     "pino": "^8.15.0"
   },
