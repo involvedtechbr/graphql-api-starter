@@ -27,8 +27,8 @@ dependencies:
     specifier: ^0.10.0
     version: 0.10.0(graphql@16.8.0)
   mercurius:
-    specifier: ^12.2.0
-    version: 12.2.0(graphql@16.8.0)
+    specifier: ^13.1.0
+    version: 13.1.0(graphql@16.8.0)
   mongoose:
     specifier: ^7.4.5
     version: 7.4.5
@@ -2258,8 +2258,8 @@ packages:
       readable-stream: 4.4.2
     dev: false
 
-  /@fastify/websocket@7.2.0:
-    resolution: {integrity: sha512-vhWQCT0I5a1JIKc34LXHQ2earW7kViYvhGn5x+lZr8TIOJKmx6NJk0Bw9zGWakulXhMsu/0y89QnsUnHiII9ag==}
+  /@fastify/websocket@8.2.0:
+    resolution: {integrity: sha512-B4tlHFBKCX7tenEG9aUcQEpksW2e0+dgRTaH/05+cro1Xsq1+kSj+9IB9Gep7a0KbHZGrat+zBsOas6lRs5dFQ==}
     dependencies:
       fastify-plugin: 4.5.1
       ws: 8.13.0
@@ -5960,15 +5960,15 @@ packages:
     requiresBuild: true
     optional: true
 
-  /mercurius@12.2.0(graphql@16.8.0):
-    resolution: {integrity: sha512-S1/j+MSJA11A0rW/TM+31qq7PTf9EQVDtq+XJQMaebtqEP5JhhUmQnTLzCh9NhHkh7YIFH72gEY03Phr3Cs8xQ==}
+  /mercurius@13.1.0(graphql@16.8.0):
+    resolution: {integrity: sha512-MDCmgNLk77f6Epe4af78Z36XChQ/TeHIO3l8Aoyj3whEqzlXxODNaNHt4vEfLDHCSbuLoLJTaK6bpWN0MtomUA==}
     engines: {node: '>=14.19.3'}
     peerDependencies:
       graphql: ^16.0.0
     dependencies:
       '@fastify/error': 3.3.0
       '@fastify/static': 6.10.2
-      '@fastify/websocket': 7.2.0
+      '@fastify/websocket': 8.2.0
       fastify-plugin: 4.5.1
       graphql: 16.8.0
       graphql-jit: 0.8.4(graphql@16.8.0)
@@ -5978,7 +5978,7 @@ packages:
       safe-stable-stringify: 2.4.3
       secure-json-parse: 2.7.0
       single-user-cache: 0.6.0
-      tiny-lru: 10.4.1
+      tiny-lru: 11.0.1
       undici: 5.23.0
       ws: 8.13.0
     transitivePeerDependencies:
@@ -7252,11 +7252,6 @@ packages:
     resolution: {integrity: sha512-xZYtOtmnA63zj04Q+F9bdEay5r47bvpo1CaNqsKi7TpoJHcotUez8Fkfo2RJWpW91lnnaApdpRbVwCWsy+ifcw==}
     dependencies:
       real-require: 0.2.0
-    dev: false
-
-  /tiny-lru@10.4.1:
-    resolution: {integrity: sha512-buLIzw7ppqymuO3pt10jHk/6QMeZLbidihMQU+N6sogF6EnBzG0qtDWIHuhw1x3dyNgVL/KTGIZsTK81+yCzLg==}
-    engines: {node: '>=12'}
     dev: false
 
   /tiny-lru@11.0.1:
