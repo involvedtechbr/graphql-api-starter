@@ -1,5 +1,7 @@
 # Specify the base image
-FROM node:18-alpine AS base
+FROM node:20.6-alpine3.17 AS base
+
+ENV NODE_VERSION 20.6.1
 
 FROM base as builder
 RUN apk add --no-cache libc6-compat

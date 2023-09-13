@@ -34,7 +34,7 @@
     "prettier:format": "prettier --write \"**/*.{ts,tsx,md}\" '!./data'",
     "typecheck": "tsc --noEmit",
     "prepare": "husky install",
-    "compose": "docker-compose --env-file ./.env up -d"
+    "docker:compose": "docker-compose --env-file ./.env up -d"
   },
   "peerDependencies": {
     "graphql": "^16.0.0"
