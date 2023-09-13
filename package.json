@@ -23,8 +23,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsup src/server.ts",
-    "start": "node dist/server.js",
-    "dev": "tsx watch src/server.ts",
+    "start": "node --env-file=.env dist/server.js",
+    "dev": "tsx watch --env-file=.env src/server.ts",
     "config:env": "cp .env.example .env",
     "test": "jest",
     "schema": "tsx scripts/updateSchema.ts",
@@ -43,7 +43,6 @@
     "@entria/graphql-mongo-helpers": "^1.1.2",
     "@fastify/cors": "^8.3.0",
     "bcrypt": "^5.1.1",
-    "dotenv": "^16.3.1",
     "fastify": "^4.23.0",
     "graphql": "^16.8.0",
     "graphql-relay": "^0.10.0",
@@ -80,6 +79,6 @@
     "typescript": "^5.2.2"
   },
   "engines": {
-    "node": "^18.17.1"
+    "node": "^20.6.1"
   }
 }

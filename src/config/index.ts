@@ -1,7 +1,3 @@
-import dotenv from "dotenv";
-
-dotenv.config();
-
 type ConfigType = {
   NODE_ENV: string;
   HOST: string;
