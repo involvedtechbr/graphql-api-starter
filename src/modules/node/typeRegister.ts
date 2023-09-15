@@ -1,6 +1,6 @@
 import { GraphQLObjectType, GraphQLTypeResolver } from "graphql";
 import { fromGlobalId, nodeDefinitions } from "graphql-relay";
-import { Context } from "@/getContext";
+import { Context } from "../../getContext";
 
 type Load = (context: Context, id: string) => unknown;
 type TypeLoaders = {
