@@ -11,7 +11,7 @@ const { Wrapper, getLoader, clearCache, load, loadAll } = createLoader({
 registerLoader("UserLoader", getLoader);
 
 export const UserLoader = {
-  UserModel: Wrapper,
+  User: Wrapper,
   getLoader,
   clearCache,
   load,

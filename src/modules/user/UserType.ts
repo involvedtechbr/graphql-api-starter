@@ -44,6 +44,6 @@ const UserConnection = connectionDefinitions({
   nodeType: UserType,
 });
 
-registerTypeLoader(UserType, UserLoader.getLoader);
+registerTypeLoader(UserType, UserLoader.load);
 
 export { UserType, UserConnection };
