@@ -25,7 +25,7 @@
     "clean": "rimraf dist",
     "build": "tsup src/server.ts",
     "start": "node --env-file=.env dist/server.cjs",
-    "dev": "NODE_OPTIONS='--loader tsx watch' node --env-file=.env src/server.ts",
+    "dev": "NODE_OPTIONS='--loader tsx' node --env-file=.env --watch src/server.ts",
     "config:env": "cp .env.example .env",
     "test": "jest",
     "schema": "tsx scripts/updateSchema.ts",
