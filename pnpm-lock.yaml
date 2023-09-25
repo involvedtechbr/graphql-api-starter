@@ -44,8 +44,8 @@ devDependencies:
     specifier: ^7.22.11
     version: 7.22.11
   '@babel/node':
-    specifier: ^7.22.10
-    version: 7.22.10(@babel/core@7.22.11)
+    specifier: ^7.22.19
+    version: 7.22.19(@babel/core@7.22.11)
   '@babel/preset-env':
     specifier: ^7.22.15
     version: 7.22.15(@babel/core@7.22.11)
@@ -975,15 +975,15 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@babel/node@7.22.10(@babel/core@7.22.11):
-    resolution: {integrity: sha512-FpSgdjIPabpEetDxtKYAcXCs0qRh12S2D40rhpRoo0w5h7/7Tu2ZroaX99cbKFNDODiSs484sZ1q0kutJbZ2iQ==}
+  /@babel/node@7.22.19(@babel/core@7.22.11):
+    resolution: {integrity: sha512-VsKSO9aEHdO16NdtqkJfrXZ9Sxlna1BVnBbToWr1KGdI3cyIk6KqOoa8mWvpK280lJDOwJqxvnl994KmLhq1Yw==}
     engines: {node: '>=6.9.0'}
     hasBin: true
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.22.11
-      '@babel/register': 7.22.5(@babel/core@7.22.11)
+      '@babel/register': 7.22.15(@babel/core@7.22.11)
       commander: 4.1.1
       core-js: 3.32.1
       node-environment-flags: 1.0.6
@@ -1901,8 +1901,8 @@ packages:
       '@babel/plugin-transform-typescript': 7.22.11(@babel/core@7.22.11)
     dev: true
 
-  /@babel/register@7.22.5(@babel/core@7.22.11):
-    resolution: {integrity: sha512-vV6pm/4CijSQ8Y47RH5SopXzursN35RQINfGJkmOlcpAtGuf94miFvIPhCKGQN7WGIcsgG1BHEX2KVdTYwTwUQ==}
+  /@babel/register@7.22.15(@babel/core@7.22.11):
+    resolution: {integrity: sha512-V3Q3EqoQdn65RCgTLwauZaTfd1ShhwPmbBv+1dkZV/HpCGMKVyn6oFcRlI7RaKqiDQjX2Qd3AuoEguBgdjIKlg==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
