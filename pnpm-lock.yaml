@@ -53,8 +53,8 @@ devDependencies:
     specifier: ^7.22.11
     version: 7.22.11(@babel/core@7.23.0)
   '@types/bcrypt':
-    specifier: ^5.0.0
-    version: 5.0.0
+    specifier: ^5.0.1
+    version: 5.0.1
   '@types/jest':
     specifier: ^29.5.4
     version: 29.5.4
@@ -3160,8 +3160,8 @@ packages:
       '@babel/types': 7.23.0
     dev: true
 
-  /@types/bcrypt@5.0.0:
-    resolution: {integrity: sha512-agtcFKaruL8TmcvqbndlqHPSJgsolhf/qPWchFlgnW1gECTN/nKbFcoFnvKAQRFfKbh+BO6A3SWdJu9t+xF3Lw==}
+  /@types/bcrypt@5.0.1:
+    resolution: {integrity: sha512-dIIrEsLV1/v0AUNI8oHMaRRTSeVjoy5ID8oclJavtPj8CwPJoD1eFoNXEypuu6k091brEzBeOo3LlxeAH9zRZg==}
     dependencies:
       '@types/node': 20.8.6
     dev: true
