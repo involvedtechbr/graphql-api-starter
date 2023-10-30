@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@entria/graphql-mongo-helpers':
     specifier: ^1.1.2
-    version: 1.1.2(dataloader@2.2.2)(graphql-relay@0.10.0)(graphql@16.8.1)(mongoose@7.6.2)
+    version: 1.1.2(dataloader@2.2.2)(graphql-relay@0.10.0)(graphql@16.8.1)(mongoose@7.6.3)
   '@fastify/cors':
     specifier: ^8.4.0
     version: 8.4.0
@@ -30,8 +30,8 @@ dependencies:
     specifier: ^13.1.0
     version: 13.1.0(graphql@16.8.1)
   mongoose:
-    specifier: ^7.6.2
-    version: 7.6.2
+    specifier: ^7.6.3
+    version: 7.6.3
   pino:
     specifier: ^8.15.6
     version: 8.15.6
@@ -1989,7 +1989,7 @@ packages:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
 
-  /@entria/graphql-mongo-helpers@1.1.2(dataloader@2.2.2)(graphql-relay@0.10.0)(graphql@16.8.1)(mongoose@7.6.2):
+  /@entria/graphql-mongo-helpers@1.1.2(dataloader@2.2.2)(graphql-relay@0.10.0)(graphql@16.8.1)(mongoose@7.6.3):
     resolution: {integrity: sha512-MkQJdl4/FCAfRx0a5SmDuv+yT+ers9ZleIBYHswwVaCeTXbQQRJxLRQd13yawFfGS1XOZCEzvCsbjQididn/Gg==}
     peerDependencies:
       dataloader: '*'
@@ -1997,14 +1997,14 @@ packages:
       graphql-relay: '*'
       mongoose: '*'
     dependencies:
-      '@entria/graphql-mongoose-loader': 4.4.0(graphql-relay@0.10.0)(graphql@16.8.1)(mongoose@7.6.2)
+      '@entria/graphql-mongoose-loader': 4.4.0(graphql-relay@0.10.0)(graphql@16.8.1)(mongoose@7.6.3)
       dataloader: 2.2.2
       graphql: 16.8.1
       graphql-relay: 0.10.0(graphql@16.8.1)
-      mongoose: 7.6.2
+      mongoose: 7.6.3
     dev: false
 
-  /@entria/graphql-mongoose-loader@4.4.0(graphql-relay@0.10.0)(graphql@16.8.1)(mongoose@7.6.2):
+  /@entria/graphql-mongoose-loader@4.4.0(graphql-relay@0.10.0)(graphql@16.8.1)(mongoose@7.6.3):
     resolution: {integrity: sha512-RcNdqPQf/GlnQch1IyUOTMTw13k+zE7zK9JeMd5cUGnShI/ih4k1JZEEtJDwyRwW1bOqAhlmP8dyY1CY8iPX8Q==}
     peerDependencies:
       graphql: '*'
@@ -2013,7 +2013,7 @@ packages:
     dependencies:
       graphql: 16.8.1
       graphql-relay: 0.10.0(graphql@16.8.1)
-      mongoose: 7.6.2
+      mongoose: 7.6.3
     dev: false
 
   /@esbuild/android-arm64@0.18.20:
@@ -6297,8 +6297,8 @@ packages:
       '@mongodb-js/saslprep': 1.1.0
     dev: false
 
-  /mongoose@7.6.2:
-    resolution: {integrity: sha512-OVx6RWbfNOzBbfTvXoOkgZmaizdXDU/B/KbBjietXQoInSg/OSULjOavXJzL51XWFkbefqkOvbeE07DfvW6FkQ==}
+  /mongoose@7.6.3:
+    resolution: {integrity: sha512-moYP2qWCOdWRDeBxqB/zYwQmQnTBsF5DoolX5uPyI218BkiA1ujGY27P0NTd4oWIX+LLkZPw0LDzlc/7oh1plg==}
     engines: {node: '>=14.20.1'}
     dependencies:
       bson: 5.5.0
