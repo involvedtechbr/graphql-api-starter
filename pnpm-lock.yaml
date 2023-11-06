@@ -27,8 +27,8 @@ dependencies:
     specifier: ^0.10.0
     version: 0.10.0(graphql@16.8.1)
   mercurius:
-    specifier: ^13.1.0
-    version: 13.1.0(graphql@16.8.1)
+    specifier: ^13.2.2
+    version: 13.2.2(graphql@16.8.1)
   mongoose:
     specifier: ^7.6.3
     version: 7.6.3
@@ -6077,8 +6077,8 @@ packages:
     requiresBuild: true
     optional: true
 
-  /mercurius@13.1.0(graphql@16.8.1):
-    resolution: {integrity: sha512-MDCmgNLk77f6Epe4af78Z36XChQ/TeHIO3l8Aoyj3whEqzlXxODNaNHt4vEfLDHCSbuLoLJTaK6bpWN0MtomUA==}
+  /mercurius@13.2.2(graphql@16.8.1):
+    resolution: {integrity: sha512-Bj5hrkJZgFOk4zo4ZcfP3k7P85Gdsxh9gGOLLQxCR+zXzHkia9o6FJuMebJjXhuWXybqFbWon3YmWx3/JaniVA==}
     engines: {node: '>=14.19.3'}
     peerDependencies:
       graphql: ^16.0.0
