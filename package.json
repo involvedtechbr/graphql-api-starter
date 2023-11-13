@@ -50,7 +50,7 @@
     "graphql-relay": "^0.10.0",
     "mercurius": "^13.2.2",
     "mongoose": "^7.6.3",
-    "pino": "^8.15.6"
+    "pino": "^8.16.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.23.0",
